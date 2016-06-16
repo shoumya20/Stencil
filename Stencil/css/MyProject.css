@@ -1,0 +1,774 @@
+/* line 2, BtnStencil.scss */
+body,
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+/* line 12, BtnStencil.scss */
+.stn-btn-large-1, .stn-border-btn-1, .stn-btn-medium-1, .stn-btn-large-2, .stn-border-btn-2, .stn-btn-medium-2, .stn-btn-large-3, .stn-border-btn-3, .stn-btn-medium-3, .stn-btn-large-4, .stn-border-btn-4, .stn-btn-medium-4, .stn-btn-large-5, .stn-border-btn-5, .stn-btn-medium-5, .stn-btn-large-6, .stn-border-btn-6, .stn-btn-medium-6, .stn-btn-large-7, .stn-border-btn-7, .stn-btn-medium-7, .stn-btn-large-8, .stn-border-btn-8, .stn-btn-medium-8, .stn-btn-large-9, .stn-border-btn-9, .stn-btn-medium-9, .stn-btn-gradient-1, .stn-btn-gradient-2, .stn-btn-gradient-3, .stn-btn-gradient-4, .stn-btn-gradient-5, .stn-btn-gradient-6, .stn-btn-gradient-7, .stn-btn-gradient-8, .stn-btn-gradient-9 {
+  display: inline-block;
+  cursor: pointer;
+  padding: .85em 1em;
+  margin: 0 1rem 1rem 0;
+  transition: all .25s ease-out; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-1 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #2199e8;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-1:hover {
+  background-color: #147cc0;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-1 {
+  border: 1px solid #2199e8;
+  width: auto !important;
+  height: auto !important;
+  color: #2199e8;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-1:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-1 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #2199e8;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-1:hover {
+  background-color: #147cc0;
+  border: 1px solid #5E5E5E; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-2 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #D42626;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-2:hover {
+  background-color: #B83232;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-2 {
+  border: 1px solid #D42626;
+  width: auto !important;
+  height: auto !important;
+  color: #D42626;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-2:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-2 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #D42626;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-2:hover {
+  background-color: #B83232;
+  border: 1px solid #5E5E5E; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-3 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #25BA25;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-3:hover {
+  background-color: #137813;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-3 {
+  border: 1px solid #25BA25;
+  width: auto !important;
+  height: auto !important;
+  color: #25BA25;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-3:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-3 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #25BA25;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-3:hover {
+  background-color: #137813;
+  border: 1px solid #5E5E5E; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-4 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #32B8B8;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-4:hover {
+  background-color: #328585;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-4 {
+  border: 1px solid #32B8B8;
+  width: auto !important;
+  height: auto !important;
+  color: #32B8B8;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-4:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-4 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #32B8B8;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-4:hover {
+  background-color: #328585;
+  border: 1px solid #5E5E5E; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-5 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #C43556;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-5:hover {
+  background-color: #913A4E;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-5 {
+  border: 1px solid #C43556;
+  width: auto !important;
+  height: auto !important;
+  color: #C43556;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-5:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-5 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #C43556;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-5:hover {
+  background-color: #913A4E;
+  border: 1px solid #5E5E5E; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-6 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #B3974D;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-6:hover {
+  background-color: #998242;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-6 {
+  border: 1px solid #B3974D;
+  width: auto !important;
+  height: auto !important;
+  color: #B3974D;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-6:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-6 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #B3974D;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-6:hover {
+  background-color: #998242;
+  border: 1px solid #5E5E5E; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-7 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #A1A1A1;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-7:hover {
+  background-color: #858585;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-7 {
+  border: 1px solid #A1A1A1;
+  width: auto !important;
+  height: auto !important;
+  color: #A1A1A1;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-7:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-7 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #A1A1A1;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-7:hover {
+  background-color: #858585;
+  border: 1px solid #5E5E5E; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-8 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #002185;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-8:hover {
+  background-color: #011247;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-8 {
+  border: 1px solid #002185;
+  width: auto !important;
+  height: auto !important;
+  color: #002185;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-8:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-8 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #002185;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-8:hover {
+  background-color: #011247;
+  border: 1px solid #5E5E5E; }
+
+/* line 8, MyProject.scss */
+.stn-btn-large-9 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #8699D1;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 17, MyProject.scss */
+.stn-btn-large-9:hover {
+  background-color: #5970B3;
+  border: 1px solid #5E5E5E; }
+
+/* line 21, MyProject.scss */
+.stn-border-btn-9 {
+  border: 1px solid #8699D1;
+  width: auto !important;
+  height: auto !important;
+  color: #8699D1;
+  background: #FFF;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  float: left;
+  font-size: 1.0625em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 30, MyProject.scss */
+.stn-border-btn-9:hover {
+  background-color: #E2E2E2;
+  outline-style: initial;
+  outline-color: #000; }
+
+/* line 35, MyProject.scss */
+.stn-btn-medium-9 {
+  border: 1px solid transparent;
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  background: #8699D1;
+  float: left;
+  font-size: 0.75em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px #AAA;
+  -moz-box-shadow: 0px 1px 4px #AAA;
+  -webkit-box-shadow: 0px 1px 4px #AAA; }
+
+/* line 44, MyProject.scss */
+.stn-btn-medium-9:hover {
+  background-color: #5970B3;
+  border: 1px solid #5E5E5E; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-1 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4ca2d4), to(#2656b5));
+  background: -webkit-linear-gradient(top, #4ca2d4, #2656b5);
+  background: -moz-linear-gradient(top, #4ca2d4, #2656b5);
+  background: -ms-linear-gradient(top, #4ca2d4, #2656b5);
+  background: -o-linear-gradient(top, #4ca2d4, #2656b5); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-1:hover, .stn-btn-gradient-1:focus {
+  color: black;
+  border: 1px solid #000; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-2 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e9c5c), to(#80c775));
+  background: -webkit-linear-gradient(top, #3e9c5c, #80c775);
+  background: -moz-linear-gradient(top, #3e9c5c, #80c775);
+  background: -ms-linear-gradient(top, #3e9c5c, #80c775);
+  background: -o-linear-gradient(top, #3e9c5c, #80c775); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-2:hover, .stn-btn-gradient-2:focus {
+  color: black;
+  border: 1px solid #000; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-3 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e36a68), to(#c91d06));
+  background: -webkit-linear-gradient(top, #e36a68, #c91d06);
+  background: -moz-linear-gradient(top, #e36a68, #c91d06);
+  background: -ms-linear-gradient(top, #e36a68, #c91d06);
+  background: -o-linear-gradient(top, #e36a68, #c91d06); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-3:hover, .stn-btn-gradient-3:focus {
+  color: black;
+  border: 1px solid #000; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-4 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#487691), to(#0340b0));
+  background: -webkit-linear-gradient(top, #487691, #0340b0);
+  background: -moz-linear-gradient(top, #487691, #0340b0);
+  background: -ms-linear-gradient(top, #487691, #0340b0);
+  background: -o-linear-gradient(top, #487691, #0340b0); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-4:hover, .stn-btn-gradient-4:focus {
+  color: black;
+  border: 1px solid #000; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-5 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#16a9ab), to(#3f7fb0));
+  background: -webkit-linear-gradient(top, #16a9ab, #3f7fb0);
+  background: -moz-linear-gradient(top, #16a9ab, #3f7fb0);
+  background: -ms-linear-gradient(top, #16a9ab, #3f7fb0);
+  background: -o-linear-gradient(top, #16a9ab, #3f7fb0); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-5:hover, .stn-btn-gradient-5:focus {
+  color: black;
+  border: 1px solid #000; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-6 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4f16ab), to(#4a65b8));
+  background: -webkit-linear-gradient(top, #4f16ab, #4a65b8);
+  background: -moz-linear-gradient(top, #4f16ab, #4a65b8);
+  background: -ms-linear-gradient(top, #4f16ab, #4a65b8);
+  background: -o-linear-gradient(top, #4f16ab, #4a65b8); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-6:hover, .stn-btn-gradient-6:focus {
+  color: black;
+  border: 1px solid #000; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-7 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#72ab16), to(#4bb35b));
+  background: -webkit-linear-gradient(top, #72ab16, #4bb35b);
+  background: -moz-linear-gradient(top, #72ab16, #4bb35b);
+  background: -ms-linear-gradient(top, #72ab16, #4bb35b);
+  background: -o-linear-gradient(top, #72ab16, #4bb35b); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-7:hover, .stn-btn-gradient-7:focus {
+  color: black;
+  border: 1px solid #000; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-8 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bdba79), to(#a1ba30));
+  background: -webkit-linear-gradient(top, #bdba79, #a1ba30);
+  background: -moz-linear-gradient(top, #bdba79, #a1ba30);
+  background: -ms-linear-gradient(top, #bdba79, #a1ba30);
+  background: -o-linear-gradient(top, #bdba79, #a1ba30); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-8:hover, .stn-btn-gradient-8:focus {
+  color: black;
+  border: 1px solid #000; }
+
+/* line 52, MyProject.scss */
+.stn-btn-gradient-9 {
+  width: auto !important;
+  height: auto !important;
+  color: #FFF;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.0625em;
+  box-shadow: 0px 1px  2px #655656;
+  -moz-box-shadow: 0px 1px  2px #655656;
+  -webkit-box-shadow: 0px 1px  2px #655656;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#db4a37), to(#e88127));
+  background: -webkit-linear-gradient(top, #db4a37, #e88127);
+  background: -moz-linear-gradient(top, #db4a37, #e88127);
+  background: -ms-linear-gradient(top, #db4a37, #e88127);
+  background: -o-linear-gradient(top, #db4a37, #e88127); }
+
+/* line 57, MyProject.scss */
+.stn-btn-gradient-9:hover, .stn-btn-gradient-9:focus {
+  color: black;
+  border: 1px solid #000; }

@@ -1,0 +1,10 @@
+.button-container {
+   width: 100%;
+   padding-top: 40px;
+   padding-left: 20px;
+}
+body {
+   background-color: #ebfffb;
+   margin: 0px;
+   padding: 0px;
+}
