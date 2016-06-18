@@ -27,7 +27,7 @@ html {
   height:$btnheight;
   color:$btncolor;
   background:$btnbackground; 
-  if $borderradius != 0px {
+  @if $borderradius != 0px {
     border-radius:$borderradius;	
     -moz-border-radius: $borderradius;
     -webkit-border-radius: $borderradius;
