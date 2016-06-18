@@ -7,12 +7,12 @@ $btncount:9;
   @for $i from 1 through $btncount {
     .stn-btn-large-#{$i} { 
        $textcolor:#FFF;
-	   $borderradius:0px;
-	   $btnbackground : unquote(nth($stn-list-buttonBaseColors,$i));
-	   $btnshadow:null;
-	   $btnfont:$stn-large-font;
-	   border: 1px solid transparent;
-	   @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
+       $borderradius:0px;
+       $btnbackground : unquote(nth($stn-list-buttonBaseColors,$i));
+       $btnshadow:null;
+       $btnfont:$stn-large-font;
+       border: 1px solid transparent;
+       @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
     }
     .stn-btn-large-#{$i}:hover {
        background-color:unquote(nth($stn-list-buttonHoverColors,$i));
@@ -20,12 +20,12 @@ $btncount:9;
     }  
     .stn-border-btn-#{$i} { 
        $textcolor:unquote(nth($stn-list-buttonBaseColors,$i));
-	   $borderradius:7px;
-	   $btnbackground : #FFF;
-	   $btnshadow:0px 1px 4px #AAA;
-	   $btnfont:$stn-large-font;
-	   border: 1px solid unquote(nth($stn-list-buttonBaseColors,$i));
-	   @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
+       $borderradius:7px;
+       $btnbackground : #FFF;
+       $btnshadow:0px 1px 4px #AAA;
+       $btnfont:$stn-large-font;
+       border: 1px solid unquote(nth($stn-list-buttonBaseColors,$i));
+       @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
     }
     .stn-border-btn-#{$i}:hover {
        background-color:#E2E2E2;
@@ -42,8 +42,8 @@ $btncount:9;
       @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
     }    
     .stn-btn-medium-#{$i}:hover {
-       background-color:unquote(nth($stn-list-buttonHoverColors,$i));
-       border:1px solid #5E5E5E;
+      background-color:unquote(nth($stn-list-buttonHoverColors,$i));
+      border:1px solid #5E5E5E;
     }
  }
  $i: 0;
