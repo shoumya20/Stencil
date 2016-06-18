@@ -3,18 +3,18 @@ body,
 html {
   font-size: 100%;
   box-sizing: border-box;
-	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
-	font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
-	-webkit-font-smoothing: subpixel-antialiased;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 %BaseSettingsBtn {
-	display:inline-block;  
-	cursor:pointer;
-	padding: .85em 1em;
-	margin: 0 1rem 1rem 0;
-	transition: all .25s ease-out;
+  display:inline-block;  
+  cursor:pointer;
+  padding: .85em 1em;
+  margin: 0 1rem 1rem 0;
+  transition: all .25s ease-out;
 }
 @mixin setBorderRadius($param) {
   border-radius: $param;
@@ -28,17 +28,17 @@ html {
   color:$btncolor;
   background:$btnbackground; 
   if $borderradius != 0px {
-	  border-radius:$borderradius;	
-		-moz-border-radius: $borderradius;
-		-webkit-border-radius: $borderradius;
+    border-radius:$borderradius;	
+    -moz-border-radius: $borderradius;
+    -webkit-border-radius: $borderradius;
   }
   float:$btnfloat;
   font-size:$btnfont;
   text-shadow:0 1px 1px rgba(0,0,0,0.3);
   @if $btnshadow != null {
-		box-shadow:$btnshadow;
-		-moz-box-shadow:$btnshadow;
-		-webkit-box-shadow:$btnshadow;
+    box-shadow:$btnshadow;
+    -moz-box-shadow:$btnshadow;
+    -webkit-box-shadow:$btnshadow;
   }          
 }
 @mixin gradientBtn($startcolor,$endcolor) {
@@ -68,22 +68,17 @@ html {
 @function fetchHoverColor($indexpos) {
   @return unquote(nth($stn-list-buttonHoverColors, $indexpos));
 }
-@function fetchGradientValues($indexposition)
-{
+@function fetchGradientValues($indexposition) {
   @return unquote(nth($stn-list-gradientColors, $indexposition));
 }
-@function fetchFont($fontType)
-{  
-  @if $fontType == 'small'
-  {
+@function fetchFont($fontType) {  
+  @if $fontType == 'small' {
      @return $stn-small-font;
   }
-  @if $fontType == 'medium'
-  {
+  @if $fontType == 'medium' {
      @return $stn-medium-font;
   }  
-  @if $fontType == 'large'
-  {
+  @if $fontType == 'large' {
      @return $stn-large-font;
   }
 }
