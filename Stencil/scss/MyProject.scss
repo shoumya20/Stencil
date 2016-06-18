@@ -14,9 +14,9 @@ $btncount:9;
 	   border: 1px solid transparent;
 	   @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
     }
-	.stn-btn-large-#{$i}:hover {
+    .stn-btn-large-#{$i}:hover {
        background-color:unquote(nth($stn-list-buttonHoverColors,$i));
-	   border:1px solid #5E5E5E;
+       border:1px solid #5E5E5E;
     }  
     .stn-border-btn-#{$i} { 
        $textcolor:unquote(nth($stn-list-buttonBaseColors,$i));
@@ -27,38 +27,38 @@ $btncount:9;
 	   border: 1px solid unquote(nth($stn-list-buttonBaseColors,$i));
 	   @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
     }
-	.stn-border-btn-#{$i}:hover {
+    .stn-border-btn-#{$i}:hover {
        background-color:#E2E2E2;
-	   outline-style:initial;
-	   outline-color:#000;
+       outline-style:initial;
+       outline-color:#000;
     }
     .stn-btn-medium-#{$i} { 
       $textcolor:#FFF;	  
-	  $borderradius:0px;
-	  $btnbackground : unquote(nth($stn-list-buttonBaseColors,$i));
-	  $btnshadow:0px 1px 4px #AAA;	  
-	  $btnfont:$stn-medium-font;
-	  border: 1px solid transparent;
-	  @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
+      $borderradius:0px;
+      $btnbackground : unquote(nth($stn-list-buttonBaseColors,$i));
+      $btnshadow:0px 1px 4px #AAA;	  
+      $btnfont:$stn-medium-font;
+      border: 1px solid transparent;
+      @include generateFlatBtn($stn-btnwidth,$stn-btnheight,$textcolor,$btnbackground,$borderradius,$btnshadow,$stn-btnfloat,$btnfont);
     }    
-	.stn-btn-medium-#{$i}:hover {
+    .stn-btn-medium-#{$i}:hover {
        background-color:unquote(nth($stn-list-buttonHoverColors,$i));
-	   border:1px solid #5E5E5E;
+       border:1px solid #5E5E5E;
     }
  }
  $i: 0;
  @each $value in $stn-list-gradientColors {    
-	$i: $i + 1;
-	.stn-btn-gradient-#{$i} {	  
-	  $startColor:nth($value,1);
-	  $endColor:nth($value,2);
-	  @include gradientBtn($startColor,$endColor);
-    }    
+     $i: $i + 1;
+     .stn-btn-gradient-#{$i} {	  
+       $startColor:nth($value,1);
+       $endColor:nth($value,2);
+       @include gradientBtn($startColor,$endColor);
+     }    
     .stn-btn-gradient-#{$i}:hover,.stn-btn-gradient-#{$i}:focus {
-	  $color:#FFF;
-	  color:darken($color,100%);
-	  border:1px solid #000;
-	}	
+       $color:#FFF;
+       color:darken($color,100%);
+       border:1px solid #000;
+     }	
  } 
 }
 @include generateBtn;
