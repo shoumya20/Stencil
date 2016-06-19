@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/angular-material.min.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-material.min.js"></script>
+    <script src="../js/angular-aria.min.js"></script>
+    <script src="../js/angular-animate.min.js"></script>
+    <script type="text/javascript">    
+         angular.module('mdcard-angularmaterial-template', ['ngMaterial']);         
+    </script>
+</head>
+
+<body ng-app="mdcard-angularmaterial-template" ng-cloak>
+    <article>
+        <div layout="row" layout-align="center">
+            <md-card flex="70" class="md-whiteframe-5dp">
+                <md-card-title>
+                    <md-card-title-text>
+                        <md-toolbar class="md-primary">
+                            <div class="md-toolbar-tools">
+                                <h2>Md Card Material Template</h2>
+                            </div>
+                        </md-toolbar>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <md-divider></md-divider>
+                    <p>The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important
+                        words in Ernest Greene's musical language: feel it. It's a simple request, as well... The titles</p>
+                    <md-divider></md-divider>
+                    <p>of Washed Out's breakthrough song and the first single from Paracosm share the two most important words
+                        in Ernest Greene's musical language: feel it. It's a simple request, as well... </p>
+                    <md-divider></md-divider>
+                    <p>The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important
+                        words in Ernest Greene's musical language: feel it. It's a simple request, as well...</p>
+                    <md-divider></md-divider>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-button class="md-warn md-raised">
+                        <md-tooltip md-direction="left">
+                            Show More Information on Click
+                        </md-tooltip>Show More</md-button>
+                    <md-button class="md-warn md-raised">Project Links</md-button>
+                </md-card-actions>
+            </md-card>
+        </div>
+    </article>
+</body>
+
+</html>
