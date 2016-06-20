@@ -18,12 +18,15 @@
 
     function inputController ($scope) {
       $scope.projectModel = {
-        comments: 'Comments',
+        comments: 'Project Comments',
         userName: 'Shoumya Dasgupta',
         userEmail:'shoumyadasgupta@gmail.com',
         city: 'Dubai',
         postalcode: '567890',
-        district: 'District'    
+        district: 'District',
+        isChecked: 'true',
+        privateBanker: 'true',
+        statementByEmail: 'true'   
       };
     }                 
   </script>
@@ -54,29 +57,46 @@
                 Your email must be between 10 and 100 characters long and should be a valid email address.
               </div>
             </div>
-            </md-input-container>
-            <md-input-container class="md-block">
-              <label>Comments</label>
-              <input name="projectModelcomments" md-maxlength="70" required ng-model="projectModel.comments" />
-              <div ng-messages="projectModelForm.projectModelcomments.$error" ng-show="projectModelForm.projectModelcomments.$dirty">
-                <div ng-message="required">This is required.</div>
-                <div ng-message="md-maxlength">The comments has to be less than 70 characters long.</div>
-              </div>
-            </md-input-container>
-            <div layout="row">
-              <md-input-container class="md-block" flex>
-                <label>City</label>
-                <input name="city" ng-model="projectModel.city" />
-              </md-input-container>
-              <md-input-container class="md-block" flex>
-                <label>Postal Code</label>
-                <input name="postalcode" ng-model="projectModel.postalcode" />
-              </md-input-container>
-              <md-input-container class="md-block" flex>
-                <label>District</label>
-                <input name="postalcode" ng-model="projectModel.district" />
-              </md-input-container>
+          </md-input-container>
+          <md-input-container class="md-block">
+            <label>Project Comments</label>
+            <input name="projectModelcomments" md-maxlength="70" required ng-model="projectModel.comments" />
+            <div ng-messages="projectModelForm.projectModelcomments.$error" ng-show="projectModelForm.projectModelcomments.$dirty">
+              <div ng-message="required">This is required.</div>
+              <div ng-message="md-maxlength">The comments has to be less than 70 characters long.</div>
             </div>
+          </md-input-container>
+          <div layout="row">
+            <md-input-container class="md-block" flex>
+              <label>City</label>
+              <input name="city" ng-model="projectModel.city" />
+            </md-input-container>
+            <md-input-container class="md-block" flex>
+              <label>Postal Code</label>
+              <input name="postalcode" ng-model="projectModel.postalcode" />
+            </md-input-container>
+            <md-input-container class="md-block" flex>
+              <label>District</label>
+              <input name="postalcode" ng-model="projectModel.district" />
+            </md-input-container>
+          </div>
+          <div layout="row">
+            <md-input-container class="md-block" flex="25">
+              <md-checkbox ng-model="projectModel.isChecked" aria-label="Are you Married ?">
+                Are you Married ?
+              </md-checkbox>
+            </md-input-container>
+            <md-input-container class="md-block" flex="35">
+              <md-checkbox ng-model="projectModel.privateBanker" aria-label="Are you Private Banking Customer ?">
+                Are you Private Banking Customer ?
+              </md-checkbox>
+            </md-input-container>
+             <md-input-container class="md-block" flex="35">
+              <md-checkbox ng-model="projectModel.statementByEmail" aria-label="Wish to Receive Statement by Email ?">
+                Wish to Receive Statement by Email ?
+              </md-checkbox>
+            </md-input-container>
+          </div>
         </div>
         <div layout="row" layout-align="end center">
           <md-button class="md-raised md-primary">Submit Form</md-button>
