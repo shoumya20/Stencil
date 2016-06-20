@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/angular-material.min.css">
+    <link rel="stylesheet" href="../css/material-template.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-material.min.js"></script>
+    <script src="../js/angular-aria.min.js"></script>
+    <script src="../js/angular-animate.min.js"></script>
+    <script type="text/javascript">    
+         angular.module('mdcard-angularmaterial-template2', ['ngMaterial']);         
+    </script>
+</head>
+
+<body ng-app="mdcard-angularmaterial-template2" ng-cloak>
+    <article>
+        <div layout="row" layout-align="center">
+            <md-card flex="70" class="md-whiteframe-5dp">
+                <md-card-title-text>
+                    <md-toolbar class="md-primary">
+                        <h2 class="md-toolbar-tools">Norway</h2>
+                    </md-toolbar>
+                </md-card-title-text>
+                <md-card-content>
+                    <img ng-src="../images/Norway.jpg" flex="100"></img>
+                    <p class="country-details-text-color">The first time I stood on the waterfront at Aurland and contemplated the fjords, not long after having
+                        passed among the peaks of Jotunheimen National Park, I was utterly convinced that there was no more
+                        beautiful country anywhere on earth. On my many Norwegian journeys since then, in winter and in summer,
+                        I've never lost that feeling. Even more than the fjords and the high country, I now find myself drawn
+                        to the...</p>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div layout="row" layout-align="center">
+            <md-card flex="70" class="md-whiteframe-5dp">
+                <md-card-title-text>
+                    <md-toolbar class="md-primary">
+                        <h2 class="md-toolbar-tools">Finland</h2>
+                    </md-toolbar>
+                </md-card-title-text>
+                <md-card-content>
+                    <img ng-src="../images/Finland.jpg" flex="100"></img>
+                    <p class="country-details-text-color">My first impression of Finland was a winter one, when snow-hushed forests and Christmastime conviviality
+                        made an instant impact. You must come back in summer, everyone said, so I did, for midnight daytime
+                        saunas by impossibly picturesque lakes and melt-in-the-mouth fresh berries and potatoes. Fresh air,
+                        the Lapland wilderness, the hiking, the wildlife: it's a natural wonderland within an impressively
+                        technological...
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div layout="row" layout-align="center">
+            <md-card flex="70" class="md-whiteframe-5dp">
+                <md-card-title-text>
+                    <md-toolbar class="md-primary">
+                        <h2 class="md-toolbar-tools">Sweden</h2>
+                    </md-toolbar>
+                </md-card-title-text>
+                <md-card-content>
+                    <img ng-src="../images/Sweden.jpg" flex="100"></img>
+                    <p class="country-details-text-color">There's something so wholesome and healthy about Sweden. People here really know how to take advantage
+                        of their gorgeous country, from its scenic beauty to its edible bounty. My first trips here were
+                        to visit my grandparents, and no day was complete without a long walk on the forested trails around
+                        their apartments. Dinner was usually local fish and produce from one of Stockholm's market halls
+                        – and for dessert,...</p>
+                </md-card-content>
+            </md-card>
+        </div>
+    </article>
+</body>
+
+</html>
