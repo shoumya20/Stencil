@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/angular-material.min.css">
+    <link rel="stylesheet" href="../css/material-template.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-material.min.js"></script>
+    <script src="../js/angular-aria.min.js"></script>
+    <script src="../js/angular-animate.min.js"></script>
+    <script type="text/javascript">    
+         angular.module('mdcard-angularmaterial-template4', ['ngMaterial']);         
+    </script>
+</head>
+
+<body ng-app="mdcard-angularmaterial-template4" ng-cloak>
+    <div layout="row" layout-align="center">
+        <md-card flex="80">
+            <md-toolbar class="md-whiteframe-2dp">
+                <h2 class="md-toolbar-tools">Nordic Countries</h2>
+            </md-toolbar>
+            <md-card-content layout-padding layout="row">
+                <div layout="column" flex="25" layout-padding class="md-whiteframe-5dp">
+                    <img ng-src="../images/Norway.jpg" flex="25"></img>
+                    <img ng-src="../images/Norway2.jpg" flex="25"></img>
+                    <img ng-src="../images/Norway.jpg" flex="25"></img>
+                    <img ng-src="../images/Norway2.jpg" flex="25"></img>
+                </div>
+                <div layout="column" flex="75">
+                    <md-toolbar>
+                        <h2 class="md-toolbar-tools">Detailed View</h2>
+                        <img ng-src="../images/ImagePlaceHolder.jpg"></img>
+                    </md-toolbar>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+</body>
+
+</html>
