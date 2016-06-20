@@ -12,22 +12,25 @@
 
   </style>
   <script language="javascript">
-         angular
-            .module('firstApplication', ['ngMaterial','ngMessages'])
-            .controller('inputController', inputController);
+    angular
+      .module('firstApplication', ['ngMaterial','ngMessages'])
+      .controller('inputController', inputController);
 
-         function inputController ($scope) {
-           $scope.project = {
-              comments: 'Comments',
-              userName: 'Shoumya Dasgupta',
-              userEmail:'shoumyadasgupta@gmail.com'    
-           };
-         }                 
-      </script>
+    function inputController ($scope) {
+      $scope.project = {
+        comments: 'Comments',
+        userName: 'Shoumya Dasgupta',
+        userEmail:'shoumyadasgupta@gmail.com',
+        city: 'Dubai',
+        postalcode: '567890',
+        district: 'District'    
+      };
+    }                 
+  </script>
 </head>
 
 <body ng-app="firstApplication">
-  <div id="inputContainer" layout="row" layout-align="center" ng-controller="inputController" ng-cloak>
+  <div ng-controller="inputController" id="inputContainer" layout="row" layout-align="center" ng-cloak>
     <md-content flex="50" layout-padding class="md-whiteframe-2dp">
       <form name="projectForm">
         <md-toolbar class="md-primary">
@@ -60,6 +63,23 @@
               <div ng-message="md-maxlength">The comments has to be less than 70 characters long.</div>
             </div>
           </md-input-container>
+          <div layout="row">
+            <md-input-container class="md-block" flex>
+              <label>City</label>
+              <input name="city" ng-model="project.city" />
+            </md-input-container>
+            <md-input-container class="md-block" flex>
+              <label>Postal Code</label>
+              <input name="postalcode" ng-model="project.postalcode" />
+            </md-input-container>
+            <md-input-container class="md-block" flex>
+              <label>District</label>
+              <input name="postalcode" ng-model="project.district" />
+            </md-input-container>
+          </div>
+        </div>
+        <div layout="row" layout-align="end center">
+          <md-button class="md-raised md-primary">Submit Form</md-button>
         </div>
       </form>
     </md-content>
