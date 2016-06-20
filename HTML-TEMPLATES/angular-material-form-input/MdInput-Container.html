@@ -17,7 +17,7 @@
       .controller('inputController', inputController);
 
     function inputController ($scope) {
-      $scope.project = {
+      $scope.projectModel = {
         comments: 'Comments',
         userName: 'Shoumya Dasgupta',
         userEmail:'shoumyadasgupta@gmail.com',
@@ -32,24 +32,24 @@
 <body ng-app="CustomerForm">
   <div ng-controller="inputController" id="inputContainer" layout="row" layout-align="center" ng-cloak>
     <md-content flex="80" layout-padding class="md-whiteframe-2dp">
-      <form name="projectForm">
+      <form name="projectModelForm">
         <md-toolbar class="md-primary">
           <h2 class="md-toolbar-tools">Customer Input form</h2>
         </md-toolbar>
         <div id="inputContainer">
           <md-input-container class="md-block">
             <label>User Name</label>
-            <input required md-maxlength="70" name="username" ng-model="project.userName">
-            <div ng-messages="projectForm.username.$error" ng-show="projectForm.username.$dirty">
+            <input required md-maxlength="70" name="username" ng-model="projectModel.userName">
+            <div ng-messages="projectModelForm.username.$error" ng-show="projectModelForm.username.$dirty">
               <div ng-message="required">Field Cannot be Left Blank</div>
               <div ng-message="md-maxlength">The comments has to be less than 70 characters long.</div>
             </div>
           </md-input-container>
           <md-input-container class="md-block">
             <label>Email</label>
-            <input required type="email" name="userEmail" ng-model="project.userEmail" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"
+            <input required type="email" name="userEmail" ng-model="projectModel.userEmail" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"
             />
-            <div ng-messages="projectForm.userEmail.$error" ng-show="projectForm.userEmail.$dirty" role="alert">
+            <div ng-messages="projectModelForm.userEmail.$error" ng-show="projectModelForm.userEmail.$dirty" role="alert">
               <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
                 Your email must be between 10 and 100 characters long and should be a valid email address.
               </div>
@@ -57,8 +57,8 @@
             </md-input-container>
             <md-input-container class="md-block">
               <label>Comments</label>
-              <input name="projectcomments" md-maxlength="70" required ng-model="project.comments" />
-              <div ng-messages="projectForm.projectcomments.$error" ng-show="projectForm.projectcomments.$dirty">
+              <input name="projectModelcomments" md-maxlength="70" required ng-model="projectModel.comments" />
+              <div ng-messages="projectModelForm.projectModelcomments.$error" ng-show="projectModelForm.projectModelcomments.$dirty">
                 <div ng-message="required">This is required.</div>
                 <div ng-message="md-maxlength">The comments has to be less than 70 characters long.</div>
               </div>
@@ -66,15 +66,15 @@
             <div layout="row">
               <md-input-container class="md-block" flex>
                 <label>City</label>
-                <input name="city" ng-model="project.city" />
+                <input name="city" ng-model="projectModel.city" />
               </md-input-container>
               <md-input-container class="md-block" flex>
                 <label>Postal Code</label>
-                <input name="postalcode" ng-model="project.postalcode" />
+                <input name="postalcode" ng-model="projectModel.postalcode" />
               </md-input-container>
               <md-input-container class="md-block" flex>
                 <label>District</label>
-                <input name="postalcode" ng-model="project.district" />
+                <input name="postalcode" ng-model="projectModel.district" />
               </md-input-container>
             </div>
         </div>
