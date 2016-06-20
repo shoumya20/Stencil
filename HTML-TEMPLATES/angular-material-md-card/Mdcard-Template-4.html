@@ -14,25 +14,24 @@
 </head>
 
 <body ng-app="mdcard-angularmaterial-template4" ng-cloak>
-    <div layout="row" layout-align="center">
-        <md-card flex="80">
-            <md-toolbar class="md-whiteframe-2dp">
-                <h2 class="md-toolbar-tools">Nordic Countries</h2>
-            </md-toolbar>
-            <md-card-content layout-padding layout="row">
-                <div layout="column" flex="25" layout-padding class="md-whiteframe-5dp">
-                    <img ng-src="../images/Norway.jpg" flex="25"></img>
-                    <img ng-src="../images/Norway2.jpg" flex="25"></img>
-                    <img ng-src="../images/Norway.jpg" flex="25"></img>
-                    <img ng-src="../images/Norway2.jpg" flex="25"></img>
-                </div>
-                <div layout="column" flex="75">
-                    <md-toolbar>
-                        <h2 class="md-toolbar-tools">Detailed View</h2>
-                        <img ng-src="../images/ImagePlaceHolder.jpg"></img>
-                    </md-toolbar>
-                </div>
+    <div class='md-padding' layout="row" layout-align="center">
+        <md-card flex="25" ng-repeat="n in [1, 2, 3]">
+            <img ng-src="../images/johnlennon.jpg" class="md-card-image" alt="Washed Out">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Action buttons</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>
+                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important words in Ernest
+                    Greene's musical language: feel it. It's a simple request, as well...
+                </p>
             </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button>Action 1</md-button>
+                <md-button>Action 2</md-button>
+            </md-card-actions>
         </md-card>
     </div>
 </body>
