@@ -43,9 +43,9 @@
 </head>
 
 <body ng-app="inputBasicDemo">
-  <div ng-controller="DemoCtrl" layout="column" ng-cloak class="md-inline-form">
-    <md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding>
-      <div>
+  <div ng-controller="DemoCtrl" layout="row" layout-align="center" ng-cloak class="md-inline-form">
+    <div flex="90">
+      <md-content  md-theme="docs-dark" layout-padding>
         <md-input-container>
           <label>Title</label>
           <input ng-model="user.title">
@@ -54,13 +54,9 @@
           <label>Email</label>
           <input ng-model="user.email" type="email">
         </md-input-container>
-      </div>
-    </md-content>
-    <md-content layout-padding>
-      <div>
-        <form name="userForm">
+        <form name="userForm" class="form-margin-setting">
           <div layout-gt-xs="row">
-            <md-input-container class="md-block" flex-gt-xs>
+            <md-input-container class="md-block" flex>
               <label>Company (Disabled)</label>
               <input ng-model="user.company" disabled>
             </md-input-container>
@@ -68,28 +64,28 @@
             </md-datepicker>
           </div>
           <div layout-gt-sm="row">
-            <md-input-container class="md-block" flex-gt-sm>
+            <md-input-container class="md-block" flex>
               <label>First name</label>
               <input ng-model="user.firstName">
             </md-input-container>
-            <md-input-container class="md-block" flex-gt-sm>
+            <md-input-container class="md-block" flex>
               <label>Long Last Name That Will Be Truncated And 3 Dots (Ellipsis) Will Appear At The End</label>
               <input ng-model="theMax">
             </md-input-container>
           </div>
-          <md-input-container class="md-block">
+          <md-input-container class="md-block" flex>
             <label>Address</label>
             <input ng-model="user.address">
           </md-input-container>
-          <md-input-container md-no-float class="md-block">
+          <md-input-container md-no-float class="md-block" flex>
             <input ng-model="user.address2" placeholder="Address 2">
           </md-input-container>
           <div layout-gt-sm="row">
-            <md-input-container class="md-block" flex-gt-sm>
+            <md-input-container class="md-block" flex>
               <label>City</label>
               <input ng-model="user.city">
             </md-input-container>
-            <md-input-container class="md-block" flex-gt-sm>
+            <md-input-container class="md-block" flex>
               <label>State</label>
               <md-select ng-model="user.state">
                 <md-option ng-repeat="state in states" value="{{state.abbrev}}">
@@ -97,7 +93,7 @@
                 </md-option>
               </md-select>
             </md-input-container>
-            <md-input-container class="md-block" flex-gt-sm>
+            <md-input-container class="md-block" flex>
               <label>Postal Code</label>
               <input name="postalCode" ng-model="user.postalCode" placeholder="12345" required ng-pattern="/^[0-9]{5}$/" md-maxlength="5">
               <div ng-messages="userForm.postalCode.$error" role="alert" multiple>
@@ -115,7 +111,7 @@
             <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus></textarea>
           </md-input-container>
         </form>
-      </div>
+    </div>
     </md-content>
   </div>
 </body>

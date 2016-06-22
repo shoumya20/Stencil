@@ -1,0 +1,48 @@
+https://github.com/join
+
+userid shoumya20
+email shoumya20@gmail.com
+password Great2016
+
+repository name 
+UI-Development-Collection
+
+Branch Name 
+Stencil-Branch
+
+Branch URL for Stencil
+https://github.com/shoumya20/UI-Development-Collection/tree/Stencil-Branch/Stencil
+
+Branch Address 
+https://github.com/shoumya20/UI-Development-Collection
+
+Git Setup
+https://git-scm.com/download/win
+
+Git Pro Book
+https://git-scm.com/book/en/v2
+
+git branch -m old_branch new_branch         # Rename branch locally    
+git push origin :old_branch                 # Delete the old branch    
+git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
+
+#Delete a branch locally
+git branch -d the_local_branch
+
+#Delete a branch remotely
+git push origin :the_remote_branch
+
+$ git branch -d remotes/origin/bugfix
+error: branch 'remotes/origin/bugfix' not found.
+
+$ git branch -d origin/bugfix
+error: branch 'origin/bugfix' not found.
+
+$ git branch -rd origin/bugfix
+Deleted remote branch origin/bugfix (was 2a14ef7).
+
+git push origin :{the_remote_branch}
+
+
+
+

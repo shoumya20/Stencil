@@ -23,7 +23,7 @@ ul li {
 md-toolbar.toolbar-style {
   padding: 0px;
   margin: 0px;
-  background-color: seagreen;
+  background-color: seagreen;  
 }
 md-toolbar.toolbar-text {
   padding: 2px !important;
@@ -33,4 +33,7 @@ md-toolbar.toolbar-text {
   font-size:.8em; 
   width: 100%; 
   text-align: center;
+}
+.form-margin-setting {
+  margin-top: -20px;
 }
