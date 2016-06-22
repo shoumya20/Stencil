@@ -36,15 +36,15 @@
       .config(function($mdThemingProvider) {
         // Configure a dark theme with primary foreground yellow
         $mdThemingProvider.theme('docs-dark', 'default')
-          .primaryPalette('yellow')
+          .primaryPalette('green')
           .dark();
       });                 
   </script>
 </head>
 
 <body ng-app="inputBasicDemo">
-  <div ng-controller="DemoCtrl" layout="row" layout-align="center" ng-cloak class="md-inline-form">
-    <div flex="90">
+  <div ng-controller="DemoCtrl" layout="row" layout-align="center" layout-padding ng-cloak>
+    <div flex="90" class="md-whiteframe-1dp">
       <md-content md-theme="docs-dark" layout-padding>
         <md-input-container flex>
           <label>Title</label>
