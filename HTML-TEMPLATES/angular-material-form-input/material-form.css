@@ -1,0 +1,12 @@
+.form-margin-setting {
+  margin-top: -20px;
+}
+md-toolbar.toolbar-style {
+  padding: 0px;
+  margin: 0px;
+  background-color: seagreen;  
+}
+md-toolbar.toolbar-text {
+  padding: 2px !important;
+  color: #FFF;
+}

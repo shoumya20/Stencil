@@ -20,24 +20,8 @@ ul li {
 .country-details-text-color {
   color:#005080;  
 }
-md-toolbar.toolbar-style {
-  padding: 0px;
-  margin: 0px;
-  background-color: seagreen;  
-}
-md-toolbar.toolbar-text {
-  padding: 2px !important;
-  color: #FFF;
-}
 .paragraph-style {
   font-size:.8em; 
   width: 100%; 
   text-align: center;
-}
-.form-margin-setting {
-  margin-top: -20px;
-}
-md-datepicker.date-picker-margin {
-  margin: 0px;
-  padding: 0px;
 }
