@@ -37,3 +37,7 @@ md-toolbar.toolbar-text {
 .form-margin-setting {
   margin-top: -20px;
 }
+md-datepicker.date-picker-margin {
+  margin: 0px;
+  padding: 0px;
+}
