@@ -17,15 +17,12 @@
 </head>
 
 <body ng-app="inputBasicDemo">
-  <div ng-controller="UserFormCtrl as formctrl" layout="row" layout-align="center" layout-padding ng-cloak>
-    <div flex="90" class="md-whiteframe-2dp">
+  <div ng-controller="UserFormCtrl as formctrl" layout="row" layout-align="center" ng-cloak>
+    <div flex="90">
       <md-content class="form-container" layout-padding>
-        <div layout-padding>
-          <md-toolbar class="toolbar-style">
-            <h2 class="md-toolbar-tools toolbar-text">User Personal Data Input Form</h2>
-          </md-toolbar>
-          <md-divider></md-divider>
-        </div>
+        <header class="form-header">
+          <h2 class="">User Personal Data Input Form</h2>
+        </header>
         <div layout="row">
           <md-input-container flex>
             <label>Title</label>
@@ -52,28 +49,38 @@
                 <input ng-model="formctrl.theMax">
               </md-input-container>
             </div>
-            <div layout="column">
-              <md-input-container class="md-block">
+            <div layout="row">
+              <md-input-container class="md-block" flex="33">
                 <label>Address1</label>
                 <input ng-model="formctrl.user.address">
               </md-input-container>
-              <md-input-container class="md-block">
+              <md-input-container class="md-block" flex>
                 <label>Address2</label>
                 <input ng-model="formctrl.user.address2">
               </md-input-container>
+              <md-input-container class="md-block" flex>
+                <label>Address3</label>
+                <input ng-model="formctrl.user.address3">
+              </md-input-container>
+            </div>
+            <div layout="row">
+              <md-input-container class="md-block" flex>
+                <label>Hobbies</label>
+                <input ng-model="formctrl.user.hobbies">
+              </md-input-container>
             </div>
             <div layout="row" layout-align="end">
-              <md-button class="md-primary md-raised" ng-click="formctrl.showConfirm($event)">Submit Form</md-button>
+              <md-button class="md-raised" ng-click="formctrl.showConfirm($event)">Submit Form</md-button>
+              <md-button class="md-raised">Reset Form</md-button>
             </div>
           </form>
-        </div>
-        <div layout="row" layout-align="center">
-          <label class="form-submitted-status-message md-subhead" ng-bind="formctrl.status"></label>
-        </div>
+        </div>        
     </div>
     </md-content>
   </div>
-
+  <footer layout="row" layout-align="center">
+    <div flex="90" class="form-footer"><span class="footer-text">Shoumya Dasgupta</span></div>
+  </footer>
 </body>
 
 </html>
