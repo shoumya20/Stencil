@@ -1,3 +1,33 @@
 .list-header {
+    background-color: rgb(53, 58, 86);
+    color: #FFF;
+    min-height: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+}
+.list-style { 
+    width: 100%;
+    margin: 5px !important;    
+}
+.icon-position {
+    margin: 2px !important;
+    vertical-align: middle;    
+}
+.icon-wrapper {
+    height: 80px;
+    line-height: 80px;
+}
+.list-footer {
     background-color: rgb(53, 58, 86) !important;
+    min-height: 7px !important;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.footer-text {
+    color:#FFF;
+    padding: 7px;
 }
