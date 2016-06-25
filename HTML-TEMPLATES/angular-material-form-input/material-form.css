@@ -10,3 +10,7 @@ md-toolbar.toolbar-text {
   padding: 2px !important;
   color: #FFF;
 }
+.form-submitted-status-message {
+  color: red;
+  text-decoration: underline;
+}
