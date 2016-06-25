@@ -8,75 +8,18 @@
   <script src="../js/angular-aria.min.js"></script>
   <script src="../js/angular-animate.min.js"></script>
   <script src="../js/angular-messages.min.js"></script>
-  <style>
-
-  </style>
+  <script src="../js/md-container-template-1-controller.js"></script>
   <script>
     angular
       .module('inputBasicDemo', ['ngMaterial', 'ngMessages'])
-      .controller('DemoCtrl', function($scope,$mdDialog) {
-        $scope.user = {
-            title: 'Developer',
-            email: 'ipsum@lorem.com',
-            firstName: '',
-            lastName: '',
-            company: 'Google',
-            address: '1600 Amphitheatre Pkwy',
-            city: 'Mountain View',
-            state: 'CA',
-            biography: 'Loves kittens, snowboarding, and can type at 130 WPM.\n\nAnd rumor has it she bouldered up Castle Craig!',
-            postalCode: '94043'
-        };
-        $scope.showAlert = function(ev) {
-          // Appending dialog to document.body to cover sidenav in docs app
-          // Modal dialogs should fully cover application
-          // to prevent interaction outside of dialog
-          $mdDialog.show(
-            $mdDialog.alert()
-            .parent(angular.element(document.querySelector('#popupContainer')))
-            .clickOutsideToClose(true)
-            .title('User Form Submission Confirmation')
-            .textContent('Do You Want to Submit the User Form')
-            .ariaLabel('Alert Dialog Demo')
-            .ok('Yes')
-            .targetEvent(ev)
-          );
-        };
-        $scope.showConfirm = function(ev) {
-          // Appending dialog to document.body to cover sidenav in docs app
-          var confirm = $mdDialog.confirm()
-                .title('Form Submission Confirmation')
-                .textContent('Do You Want to Submit the User Form')
-                .ariaLabel('Lucky day')
-                .targetEvent(ev)
-                .ok('Yes')
-                .cancel('No');
-          $mdDialog.show(confirm).then(function() {
-            $scope.status = 'Form Submitted';
-          }, function() {
-            $scope.status = 'Form Not Submitted';
-          });
-       };
-       $scope.states = ('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS ' +
-          'MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI ' +
-          'WY').split(' ').map(function(state) {
-              return {abbrev: state};
-           });
-      })
-      .config(function($mdThemingProvider) {
-          // Configure a dark theme with primary foreground yellow
-          $mdThemingProvider.theme('docs-dark', 'default')
-            .primaryPalette('green')
-            .dark();
-      });
-                       
+      .controller('UserFormCtrl', UserFormCtrl)
   </script>
 </head>
 
 <body ng-app="inputBasicDemo">
-  <div ng-controller="DemoCtrl" layout="row" layout-align="center" layout-padding ng-cloak>
+  <div ng-controller="UserFormCtrl as formctrl" layout="row" layout-align="center" layout-padding ng-cloak>
     <div flex="90" class="md-whiteframe-1dp">
-      <md-content md-theme="docs-dark" layout-padding>
+      <md-content class="form-container" layout-padding>
         <div layout-padding>
           <md-toolbar class="toolbar-style">
             <h2 class="md-toolbar-tools toolbar-text">User Personal Data Input Form</h2>
@@ -86,46 +29,46 @@
         <div layout="row">
           <md-input-container flex>
             <label>Title</label>
-            <input ng-model="user.title">
+            <input ng-model="formctrl.user.title">
           </md-input-container>
           <md-input-container flex>
             <label>Email</label>
-            <input ng-model="user.email" type="email">
+            <input ng-model="formctrl.user.email" type="email">
           </md-input-container>
         </div>
         <div>
           <form name="userForm" class="form-margin-setting">
             <div layout="row">
               <md-input-container class="md-block" flex>
-                <label>Company (Disabled)</label>
-                <input ng-model="user.company" disabled>
+                <label>Company Working In (Disabled)</label>
+                <input ng-model="formctrl.user.company" disabled>
               </md-input-container>
               <md-input-container class="md-block" flex>
-                <label>First name</label>
-                <input ng-model="user.firstName">
+                <label>Enter First name</label>
+                <input ng-model="formctrl.user.firstName">
               </md-input-container>
               <md-input-container class="md-block" flex>
-                <label>Last Name</label>
-                <input ng-model="theMax">
+                <label>Enter Last Name</label>
+                <input ng-model="formctrl.theMax">
               </md-input-container>
             </div>
             <div layout="column">
               <md-input-container class="md-block">
                 <label>Address1</label>
-                <input ng-model="user.address">
+                <input ng-model="formctrl.user.address">
               </md-input-container>
               <md-input-container class="md-block">
                 <label>Address2</label>
-                <input ng-model="user.address2" placeholder="Address 2">
+                <input ng-model="formctrl.user.address2">
               </md-input-container>
             </div>
             <div layout="row" layout-align="end">
-              <md-button class="md-primary md-raised" ng-click="showConfirm($event)">Submit Form</md-button>
+              <md-button class="md-primary md-raised" ng-click="formctrl.showConfirm($event)">Submit Form</md-button>
             </div>
           </form>
         </div>
         <div layout="row" layout-align="center">
-          <label class="form-submitted-status-message md-subhead" ng-bind="status"></label>
+          <label class="form-submitted-status-message md-subhead" ng-bind="formctrl.status"></label>
         </div>
     </div>
     </md-content>

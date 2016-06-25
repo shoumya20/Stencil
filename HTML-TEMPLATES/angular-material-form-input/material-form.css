@@ -4,7 +4,7 @@
 md-toolbar.toolbar-style {
   padding: 0px;
   margin: 0px;
-  background-color: seagreen;  
+  background-color: #689aa9;  
 }
 md-toolbar.toolbar-text {
   padding: 2px !important;
@@ -13,4 +13,7 @@ md-toolbar.toolbar-text {
 .form-submitted-status-message {
   color: red;
   text-decoration: underline;
+}
+.form-container {
+  background-color: #f5f2f2;
 }
