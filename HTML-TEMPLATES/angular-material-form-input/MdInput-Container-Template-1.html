@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="../css/angular-material.min.css">
   <link rel="stylesheet" href="material-form.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="../js/angular.min.js"></script>
   <script src="../js/angular-material.min.js"></script>
   <script src="../js/angular-aria.min.js"></script>
@@ -18,7 +19,7 @@
 </head>
 
 <body ng-app="inputBasicDemo">
-  <div ng-controller="UserFormCtrl as formctrl" layout="row" layout-align="center"  ng-cloak>
+  <div ng-controller="UserFormCtrl as formctrl" layout="row" layout-align="center" ng-cloak>
     <div flex="50" class="md-whiteframe-2dp" layout-margin>
       <md-content layout-padding class="content-background">
         <header layout="column" class="form-header">
@@ -26,51 +27,58 @@
         </header>
         <section layout="column">
           <md-input-container flex>
-            <label>Title</label>
-            <input ng-model="formctrl.user.title" />
+            <div layout="row">
+              <md-icon class="material-icons">person</md-icon>
+              <input ng-model="formctrl.user.title" />
+            </div>
           </md-input-container>
           <md-input-container flex>
-            <label>Email</label>
-            <input ng-model="formctrl.user.email" type="email" />
+            <div layout="row">
+              <md-icon class="material-icons">email</md-icon>
+              <input ng-model="formctrl.user.email" type="email" />
+            </div>
+          </md-input-container>
+          <md-input-container class="md-block" flex>
+            <div layout="row">
+              <md-icon class="material-icons">phone</md-icon>
+              <input ng-model="formctrl.user.phone" />
+            </div>
           </md-input-container>
         </section>
         <form layout="column" name="userForm">
-          <div>
-            <md-input-container class="md-block" flex>
-              <label>Company Working In (Disabled)</label>
+          <md-input-container class="md-block" flex>
+            <div layout="row">
+              <md-icon class="material-icons">location_city</md-icon>
               <input ng-model="formctrl.user.company" disabled/>
-            </md-input-container>
-            <md-input-container class="md-block" flex>
-              <label>Enter First name</label>
-              <input ng-model="formctrl.user.firstName" />
-            </md-input-container>
-            <md-input-container class="md-block" flex>
-              <label>Enter Last Name</label>
-              <input ng-model="formctrl.theMax" />
-            </md-input-container>
-          </div>
-          <div>
-            <md-input-container class="md-block" flex>
-              <label>Address1</label>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-block" flex>
+            <div layout="row" flex>
+              <md-icon class="material-icons">person</md-icon>
+              <input ng-model="formctrl.user.firstName" placeholder="First Name" />
+            </div>           
+          </md-input-container>         
+          <md-input-container class="md-block" flex>
+            <div layout="row">
+              <md-icon class="material-icons">add_location</md-icon>
               <input ng-model="formctrl.user.address" />
-            </md-input-container>
-            <md-input-container class="md-block" flex>
-              <label>Address2</label>
-              <input ng-model="formctrl.user.address2" />
-            </md-input-container>
-            <md-input-container class="md-block" flex>
-              <label>Address3</label>
-              <input ng-model="formctrl.user.address3" />
-            </md-input-container>
-          </div>
-          <div>
-            <md-input-container class="md-block" flex>
-              <label>Hobbies</label>
-              <input ng-model="formctrl.user.hobbies" />
-            </md-input-container>
-          </div>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-block" flex>
+            <div layout="row">
+              <md-icon class="material-icons">add_location</md-icon>
+              <input ng-model="formctrl.user.address2" placeholder="Address Details"/>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-block" flex>
+            <div layout="row">
+              <md-icon class="material-icons">message</md-icon>
+              <input ng-model="formctrl.user.hobbies" placeholder="Hobbies"/>
+            </div>
+          </md-input-container>
+
           <div layout="row" layout-align="end">
-            <md-button ng-click="formctrl.showConfirm($event)">Submit Form</md-button>            
+            <md-button class="md-raised md-primary" ng-click="formctrl.showConfirm($event)">Submit Form</md-button>
           </div>
         </form>
       </md-content>

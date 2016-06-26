@@ -7,6 +7,7 @@ function UserFormCtrl($mdDialog) {
         lastName: '',
         company: 'Google',
         address: '1600 Amphitheatre Pkwy',
+        phone: '+462345789012',
         city: 'Mountain View',
         state: 'CA',
         biography: 'Loves kittens, snowboarding, and can type at 130 WPM.\n\nAnd rumor has it she bouldered up Castle Craig!',
